@@ -14,6 +14,7 @@ body {
     
     min-width: 100vw;
 
+    min-height: 100vh;
     height: 100vh;
 
     max-width: 100%;
@@ -22,7 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
 
-    font-size: 15em;
+    font-size: 10vw;
     
 }
 
@@ -35,10 +36,10 @@ body {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-    typing 2.5s steps(50, end),
+    typing 2.5s steps(60, end),
     blink-caret .75s step-end infinite;
 
-    max-width: 100%;
+    max-width: 100vw;
     word-wrap: break-word;
 }
 
@@ -50,7 +51,7 @@ a {
 .heroNavigation {
     color: white;
     align-self: center;
-    font-size: 0.2em;
+    font-size: 3vh;
     transition: 0.5s;
     display: flex;
     justify-content: center;
@@ -74,7 +75,7 @@ a {
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 80% }
+    to { width: 65% }
   }
   
   /* The typewriter cursor effect */
@@ -85,16 +86,17 @@ a {
 
 #aboutBlock {
     width: 100vw;
-    height: 40vw;
+    height: 100%;
     background-color: rgba(128, 128, 128, 0.178);
     display: flex;
     justify-content: center;
     align-items: center;
 
+
+
 }
 
 #aboutBlock .inner {
-
     width: 95%;
     /* border-radius: 2em; */
     display: flex;
@@ -105,7 +107,7 @@ a {
 
 .aboutText {
     background-color: white;
-    padding: 2em;
+    padding: 1vw;
 
     width: 70vw;
 }
@@ -113,7 +115,7 @@ a {
 .aboutHeader {
     font-weight: bold;
     color: goldenrod;
-    font-size: 2em;
+    font-size: 2vh;
 }
 
 #profilePic {
@@ -130,7 +132,8 @@ a {
 
 
 #projectsBlock{
-    height: 80vh;
+    height: 100%;
+
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -139,8 +142,9 @@ a {
 
 .projectsHeader {
     color :goldenrod;
-    font-size: 4em;
+    font-size: 3vh;
     padding: 0.5em;
+    margin: 1em;
 }
 
 .projectsCardsBlock {
@@ -152,22 +156,35 @@ a {
 }
 
 .projectsCards {
+   
     transition: 0.3s;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
+
+    /* min-width: 20vw; */
+    width: 20em;
+    height: 30vh;
+    /* background-color: rgba(128, 128, 128, 0.178); */
     
-    width: 20vw;
-    height: 25vh;
-    background-color: rgba(128, 128, 128, 0.178);
-    
-    padding: 1em;
+   
+   
+    overflow-y: auto;
+
+
     margin: 1em;
+    padding: 1em;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+
 }
 
 .projectsCards:hover {
-    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
     transition: 0.3s;
 }
 
