@@ -6,21 +6,23 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     color: grey;
+
 }
 
 .heroBlock {
     background-color: rgb(255, 255, 255);
-    width: 100vw;
+    
+    min-width: 100vw;
+
     height: 100vh;
+
+    max-width: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     font-size: 15em;
-    flex-wrap: wrap;
-
-
     
 }
 
@@ -36,6 +38,8 @@ body {
     typing 2.5s steps(50, end),
     blink-caret .75s step-end infinite;
 
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 a {
@@ -50,6 +54,8 @@ a {
     transition: 0.5s;
     display: flex;
     justify-content: center;
+
+    
 
 }
 
@@ -84,26 +90,24 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #aboutBlock .inner {
 
     width: 95%;
-    height: 90%;
     /* border-radius: 2em; */
     display: flex;
     align-items: center;
 
-}
 
-/* #aboutBlock .inner:hover {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-} */
+}
 
 .aboutText {
     background-color: white;
-    padding: 1em;
+    padding: 2em;
+
+    width: 70vw;
 }
 
 .aboutHeader {
@@ -116,4 +120,73 @@ a {
     width: 25vw;
     height: auto;
     margin: 2vw;
+}
+
+
+
+
+
+
+
+
+#projectsBlock{
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectsHeader {
+    color :goldenrod;
+    font-size: 4em;
+    padding: 0.5em;
+}
+
+.projectsCardsBlock {
+    display: flex;
+    width: 98vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsCards {
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+    width: 20vw;
+    height: 25vh;
+    background-color: rgba(128, 128, 128, 0.178);
+    
+    padding: 1em;
+    margin: 1em;
+}
+
+.projectsCards:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.projectsCardsHeader {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.awards {
+    color: goldenrod;
+    padding: 0.5em;
+}
+
+
+#contactBlock {
+    background-color: rgba(128, 128, 128, 0.178);
+    height: 30vh;
+}
+
+#linkedinLink {
+    color: goldenrod;
 }
