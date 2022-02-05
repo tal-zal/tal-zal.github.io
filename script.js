@@ -10,6 +10,8 @@ document.querySelector(".heroTextTyping").addEventListener("animationend", () =>
     let navigation = document.querySelector(".heroNavigation");
     navigation.style.color = "grey";
     
+    let headerText = document.querySelector(".heroNavigation").style.display = "flex";
+
     let aboutNav = document.getElementById("about");
     let projectsNav = document.getElementById("projects");
     let contactNav = document.getElementById("contact");
