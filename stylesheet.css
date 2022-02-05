@@ -200,11 +200,13 @@ a {
 #contactBlock {
     height: 15vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #linkedinLogo{
+    padding-top: 1em;
     width: 3em;
     height: auto;
 }
