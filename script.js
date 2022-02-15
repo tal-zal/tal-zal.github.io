@@ -22,3 +22,23 @@ document.querySelector(".heroTextTyping").addEventListener("animationend", () =>
 
     }, 200)
 });
+
+
+document.addEventListener('scroll', function (e) {
+    var top  = window.pageYOffset + window.innerHeight,
+        isVisible = top > document.querySelector('#profilePic').offsetTop;
+  
+     if (isVisible) {
+       document.getElementById('profilePic').classList.add('gelatine');
+     }
+  });
+
+  document.addEventListener('scroll', function (e) {
+    var top  = window.pageYOffset + window.innerHeight,
+        isVisible = top > document.querySelector('#linkedinLogo').offsetTop;
+  
+     if (isVisible) {
+       document.getElementById('linkedinLogo').classList.add('gelatine');
+     }
+  });
+
