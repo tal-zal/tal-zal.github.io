@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     color: grey;
 
@@ -101,16 +101,16 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    height: 35vh;
 }
 
 #aboutText {
     background-color: white;
     padding: 1.5em;
-    border-radius: 2em;
+    border-radius: 1em;
     width: 90vw;
     overflow: auto;
-    max-height: 22vh;
+    max-height: 20vh;
 }
 
 .aboutHeader {
@@ -178,18 +178,16 @@ a {
     margin: 1em;
     padding: 1em;
 
-    border-radius: 2em;
+    border-radius: 1em;
     /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); */
     transition: 0.3s;
 
     gap: 2em;
-
-
 }
 
 .projectsCards:hover {
     color: rgb(89, 89, 89);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
     transform: scale(1.05);
     transition: 0.3s;
 
