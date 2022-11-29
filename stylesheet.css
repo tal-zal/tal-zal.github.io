@@ -62,12 +62,24 @@ a {
     to   { opacity: 1; }
 }
 
-#aboutDone, #projectsDone, #contactDone {
+/* cards make fun movements when come into screen */
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
+
+  .gelatine {
+    animation: gelatine 2s;
+  }
+
+#aboutDone, #projectsDone, #contactDone, #linkedinDone {
     transition: 0.3s;
     padding: 0.5em;
 }
 
-#aboutDone:hover, #projectsDone:hover, #contactDone:hover {
+#aboutDone:hover, #projectsDone:hover, #contactDone:hover, #linkedinDone:hover {
     color: goldenrod;
     transform: scale(1.1);
     transition: 0.3s;
@@ -88,11 +100,12 @@ a {
 
 #aboutBlock {
     width: 100vw;
-    height: 100%;
+    /* height: 100%; */
     background-color: rgba(192, 192, 192, 0.178);
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding: 30vh, 30vw; */
 }
 
 #aboutBlock .inner {
@@ -101,16 +114,21 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35vh;
+    /* height: 35vh; */
+    /* margin: 10%, 20%;
+     */
+    
 }
 
 #aboutText {
     background-color: white;
     padding: 1.5em;
     border-radius: 0.5em;
-    width: 90vw;
-    overflow: auto;
-    max-height: 20vh;
+    /* width: 90vw; */
+    /* overflow: auto; */
+    /* max-height: 20vh; */
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .aboutHeader {
@@ -128,7 +146,7 @@ a {
 
 #projectsBlock{
     height: 100%;
-    background-color: white;
+    background-color: rgba(192, 192, 192, 0.178);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,33 +162,22 @@ a {
 
 .projectsCardsBlock {
     display: flex;
-    width: 98vw;
+    width: 96%;
+    padding-right: 2%;
+    padding-left: 2%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
-/* cards make fun movements when come into screen */
-@keyframes gelatine {
-    from, to { transform: scale(1, 1); }
-    25% { transform: scale(0.9, 1.1); }
-    50% { transform: scale(1.1, 0.9); }
-    75% { transform: scale(0.95, 1.05); }
-  }
-
-  .gelatine {
-    animation: gelatine 2s;
-  }
 
 .projectsCards {
-    
-
-    transition: 0.3s;
+    transition: 0.2s;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    /* min-width: 20vw; */
     width: 20em;
     height: 30vh;
     /* background-color: rgba(190, 255, 251, 0.178); */
@@ -181,8 +188,7 @@ a {
 
     border-radius: 0.5em;
     /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); */
-    transition: 0.3s;
-    font-size: 12px;
+    font-size: 14px;
     gap: 2em;
 }
 
@@ -212,6 +218,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    /* background-color: rgba(192, 192, 192, 0.178); */
 }
 
 #linkedinLogo{

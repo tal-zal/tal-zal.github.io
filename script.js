@@ -15,23 +15,15 @@ document.querySelector(".heroTextTyping").addEventListener("animationend", () =>
     let aboutNav = document.getElementById("about");
     let projectsNav = document.getElementById("projects");
     let contactNav = document.getElementById("contact");
+    let linkedinNav = document.getElementById("linkedin")
 
     aboutNav.id = "aboutDone";
     projectsNav.id = "projectsDone";
     contactNav.id = "contactDone";
+    linkedinNav.id = "linkedinDone"
 
     }, 200)
 });
-
-
-document.addEventListener('scroll', function (e) {
-    var top  = window.pageYOffset + window.innerHeight,
-        isVisible = top > document.querySelector('#profilePic').offsetTop;
-  
-     if (isVisible) {
-       document.getElementById('profilePic').classList.add('gelatine');
-     }
-  });
 
   document.addEventListener('scroll', function (e) {
     var top  = window.pageYOffset + window.innerHeight,
