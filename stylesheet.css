@@ -190,6 +190,10 @@ a {
     /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); */
     font-size: 14px;
     gap: 2em;
+
+    border-left: 0.05em solid #aaa;
+    border-right: 0.05em solid #aaa;
+    border-color: rgba(192, 192, 192, 0.5);
 }
 
 .projectsCards:hover {
@@ -220,6 +224,15 @@ a {
     align-items: center;
     width: 100vw;
     /* background-color: rgba(192, 192, 192, 0.178); */
+}
+
+.links {
+    color: goldenrod;
+    
+}
+
+.links:hover {
+    color: grey;
 }
 
 #linkedinLogo{
